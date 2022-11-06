@@ -1,0 +1,9 @@
+.actionBarStyle {
+	background: #227C9D;
+	color: #FEF9EF;
+}
+
+GridLayout { background: #FEF9EF; }
+
+.titleStyle { font-size: 18px; font-weight: bold; }
+.subtitleStyle { font-size: 15px; }
