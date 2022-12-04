@@ -10,10 +10,10 @@
       </StackLayout> -->
       <GridLayout columns="*, 2*" rows="2*, 3*" [nsRouterLink]="['/item', item.id]">
       	<!--<label text="0,0" row="0" col="0" backgroundColor="#43b883"></label>-->
-      	<image src="https://www.gunaydindubai.com/gunaydindubai_files/201752415213515_DSC00053.jpg" stretch="aspectFill"></image>
+      	<image src="https://www.gunaydindubai.com/gunaydindubai_files/201752415213515_DSC00053.jpg" stretch="aspectFill" class="imageItemList"></image>
       	<StackLayout row="0" col="1">
   			<label text="{{ item.name }}" class="titleStyle"></label>
-      		<label text="{{ item.role }}" class="subtitleStyle"></label>
+      		<label text="{{ item.address }}" class="subtitleStyle"></label>
       	</StackLayout>
       </GridLayout>
     </ng-template>

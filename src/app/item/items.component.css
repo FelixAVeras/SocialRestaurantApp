@@ -7,3 +7,5 @@ GridLayout { background: #FEF9EF; }
 
 .titleStyle { font-size: 18px; font-weight: bold; }
 .subtitleStyle { font-size: 15px; }
+
+.imageItemList { border-radius: 10%; }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 
-import { Item } from './item'
+import { Restaurant } from './restaurant'
 import { ItemService } from './item.service'
 
 @Component({
@@ -9,7 +9,7 @@ import { ItemService } from './item.service'
   styleUrls: ['./items.component.css']
 })
 export class ItemsComponent implements OnInit {
-  items: Array<Item>
+  items: Array<Restaurant>
 
   constructor(private itemService: ItemService) {}
 
