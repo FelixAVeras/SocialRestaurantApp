@@ -7,6 +7,7 @@ import { ItemService } from './item.service'
 @Component({
   selector: 'ns-details',
   templateUrl: './item-detail.component.html',
+  styleUrls: ['./item-detail.component.css']
 })
 export class ItemDetailComponent implements OnInit {
   item: Restaurant

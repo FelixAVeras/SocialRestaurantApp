@@ -1,11 +1,11 @@
 .actionBarStyle {
-	background: #227C9D;
-	color: #FEF9EF;
+	background: #0081A7;
+	color: #fff;
 }
 
-GridLayout { background: #FEF9EF; }
+GridLayout { background: #FDFCDC; }
 
 .titleStyle { font-size: 18px; font-weight: bold; }
-.subtitleStyle { font-size: 15px; }
+.subtitleStyle { font-size: 15px; color: #4c4a4a }
 
 .imageItemList { border-radius: 10%; }

@@ -1,19 +1,16 @@
 <ActionBar title="Social Restaurant" flat="true" class="actionBarStyle" text="Nuevo" android.position="actionBar">
-	<ActionItem ios.position="right" text="Nuevo" android.position="actionBar"></ActionItem>
+	<ActionItem ios.position="right" text="Nuevo" (tap)="newRestaurant()" android.position="actionBar"></ActionItem>
 </ActionBar>
 
 <GridLayout>
   <ListView [items]="items">
     <ng-template let-item="item">
-      <!--<StackLayout [nsRouterLink]="['/item', item.id]">
-        <Label [text]="item.name"></Label>
-      </StackLayout> -->
       <GridLayout columns="*, 2*" rows="2*, 3*" [nsRouterLink]="['/item', item.id]">
-      	<!--<label text="0,0" row="0" col="0" backgroundColor="#43b883"></label>-->
-      	<image src="https://www.gunaydindubai.com/gunaydindubai_files/201752415213515_DSC00053.jpg" stretch="aspectFill" class="imageItemList"></image>
+      	<image src="{{ item.image }}" stretch="aspectFill" class="imageItemList"></image>
       	<StackLayout row="0" col="1">
-  			<label text="{{ item.name }}" class="titleStyle"></label>
-      		<label text="{{ item.address }}" class="subtitleStyle"></label>
+  			  <label text="{{ item.name }}" class="titleStyle"></label>
+          <label text="{{ item.description }}" class="subtitleStyle"></label>
+          <label text="{{ item.address }}" class="subtitleStyle"></label>
       	</StackLayout>
       </GridLayout>
     </ng-template>
